@@ -226,6 +226,10 @@ section:nth-child(even) {
 .testimonials .testimonials-card {
     background-color: var(--purple);
     border-radius: 80px;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+    justify-content: center;
+    color: #FFF;
 }
 
 .testimonials .testimonials-card__img {
@@ -243,6 +247,22 @@ section:nth-child(even) {
     object-fit: cover;
 }
 
+.testimonials .row.col-col {
+    gap: 2rem;
+}
+
+.testimonials .card__desc {
+    line-height: 2rem;
+}
+
+.testimonials .testimonials-card__desc {
+    display: contents;
+}
+
+.testimonials .testimonials-card__desc .card_auth {
+    font-weight: bold;
+}
+
 
 
 /******************************************************
@@ -258,6 +278,7 @@ section:nth-child(even) {
 @media (min-width: 768px) {
 
     /* HERO */
+
     /* SOLUZIONE CON GRID
     .hero .row.grid {
         grid-template-columns: repeat(3, 1fr);
@@ -298,6 +319,30 @@ section:nth-child(even) {
     /* PLANNING */
     .planning h3.planning__title {
         font-size: 4rem;
+    }
+
+    /* TESTIMONIALS */
+
+    .testimonials {
+        padding: 4rem 0 7rem;
+    }
+
+    .testimonials .testimonials-card>* {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    .testimonials .testimonials-card {
+        align-items: center;
+        text-align: left;
+    }
+
+    .testimonials .card__desc {
+        padding-bottom: 2.25rem;
+    }
+
+    .testimonials .testimonials-card__desc {
+        display: block;
     }
 
 }
@@ -361,7 +406,7 @@ section:nth-child(even) {
     TODO: DEBUG
 *******************************************************/
 
-.debug section:not([class="hero"]):not([class="planning"]) {
+.debug section:not([class="hero"]):not([class="planning"]):not([class="testimonials"]) {
     border: 5px solid black;
     padding: 10px;
 }
