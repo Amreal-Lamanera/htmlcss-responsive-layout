@@ -86,7 +86,13 @@
 
 /* Versione Desktop - large bootstrap */
 @media (min-width: 992px) {
+
     .main-header .nav__list {
         display: block;
     }
+
+    .main-header .nav__bars {
+        display: none;
+    }
+
 }
