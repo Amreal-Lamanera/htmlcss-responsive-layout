@@ -109,9 +109,14 @@ section:nth-child(even) {
     padding: 50px 0 100px;
 }
 
-.hero .row.grid,
+/*.hero .row.grid,*/
+.hero .row.flex,
 .hero .card__head {
     gap: 25px;
+}
+
+.hero .row.flex>* {
+    flex-basis: 100%;
 }
 
 .hero .card {
@@ -253,12 +258,37 @@ section:nth-child(even) {
 @media (min-width: 768px) {
 
     /* HERO */
+    /* SOLUZIONE CON GRID
     .hero .row.grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
     .col-span-2 {
         grid-column: span 2;
+    } */
+
+    /* SOLUZIONE CON FLEX + CALC TENENDO CONTO DEL GAP
+    .hero .row.flex>* {
+        flex-basis: calc((100% - 50px) / 3);
+    }
+
+    .hero .col.col-span-2 {
+        flex-basis: calc(((100% - 50px) / 3 * 2) + 25px);
+    } */
+
+    /* SOLUZIONE CON FLEX + PADDING E MARGIN NEGATIvO */
+    .hero .row.flex>* {
+        flex-basis: calc(100% / 3);
+        padding: 12.5px;
+    }
+
+    .hero .col.col-span-2 {
+        flex-basis: calc(100% / 3 * 2);
+    }
+
+    .hero .row.flex {
+        gap: 0;
+        margin: 0 -12.5px;
     }
 
     /* PLANNING */
