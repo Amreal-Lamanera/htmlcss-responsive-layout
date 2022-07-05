@@ -1,1 +1,92 @@
 /* Regole Generali */
+
+:root {
+    --blue: #0084FD;
+    --light-blue: #B5DDFF;
+    --purple: #9792E4;
+    --yellow: #FDC15F;
+    --dark-grey: #333333;
+    --links-color: #827EBF;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-col {
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.container-small {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.button {
+    background-color: #FFF;
+    border-radius: 20px;
+    color: #000;
+    padding: 0.5em 0.8em;
+}
+
+/* Approccio Mobile-first */
+
+/* Header */
+
+.main-header {
+    padding: 1rem 0;
+    background-color: var(--blue);
+    color: #FFF;
+}
+
+.main-header .container.flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header .logo__img {
+    width: 80px;
+}
+
+.main-header .nav__list {
+    display: none;
+}
+
+.nav__list .flex {
+    gap: 30px;
+}
+
+.nav__list .flex a:not([class="button"]):hover {
+    text-decoration: underline;
+}
+
+.main-header .nav__bars {
+    cursor: pointer;
+    font-size: 1.75rem;
+}
+
+
+
+/* Media Query */
+
+/* Versione Tablet - medium bootstrap */
+@media (min-width: 768px) {}
+
+/* Versione Desktop - large bootstrap */
+@media (min-width: 992px) {
+    .main-header .nav__list {
+        display: block;
+    }
+}
