@@ -282,8 +282,8 @@ section:nth-child(even) {
         padding: 12.5px;
     }
 
-    .hero .row.flex>*:nth-child(n+2) {
-        padding-bottom: 0;
+    .hero {
+        padding-bottom: calc(100px - 12.5px);
     }
 
     .hero .col.col-span-2 {
