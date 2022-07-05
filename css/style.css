@@ -1,4 +1,6 @@
-/* Regole Generali */
+/******************************************************
+    REGOLE GENERALI
+*******************************************************/
 
 :root {
     --blue: #0084FD;
@@ -62,7 +64,9 @@ section:nth-child(even) {
 
 /* Approccio Mobile-first */
 
-/* Header */
+/******************************************************
+    HEADER
+*******************************************************/
 
 .main-header {
     padding: 1rem 0;
@@ -189,8 +193,61 @@ section:nth-child(even) {
     cursor: pointer;
 }
 
+/* TESTIMONIALS */
 
-/* Media Query */
+.testimonials {
+    padding: 70px 0 110px;
+}
+
+.testimonials .container {
+    gap: 40px;
+}
+
+.testimonials .container {
+    text-align: center;
+}
+
+.testimonials .testimonials__title {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.testimonials .testimonials__sub-title {
+    font-size: 2rem;
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.testimonials .testimonials-card {
+    background-color: var(--purple);
+    border-radius: 80px;
+}
+
+.testimonials .testimonials-card__img {
+    justify-content: center;
+}
+
+.testimonials .testimonials-card>* {
+    flex-basis: 100%;
+}
+
+.testimonials .testimonials-card img {
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+
+
+/******************************************************
+    FOOTER
+*******************************************************/
+
+
+/******************************************************
+    MEDIA QUERY
+*******************************************************/
 
 /* Versione Tablet - medium bootstrap */
 @media (min-width: 768px) {
@@ -205,7 +262,7 @@ section:nth-child(even) {
     }
 
     /* PLANNING */
-    .planning h2.planning__title {
+    .planning h3.planning__title {
         font-size: 4rem;
     }
 
@@ -243,7 +300,7 @@ section:nth-child(even) {
         flex-grow: 1;
     }
 
-    .planning h2.planning__title {
+    .planning h3.planning__title {
         font-size: 3rem;
     }
 
@@ -260,9 +317,15 @@ section:nth-child(even) {
         align-self: flex-end;
     }
 
+    /* TESTIMONIALS */
+
+
+
 }
 
-/* TODO: Debug */
+/******************************************************
+    TODO: DEBUG
+*******************************************************/
 
 .debug section:not([class="hero"]):not([class="planning"]) {
     border: 5px solid black;
