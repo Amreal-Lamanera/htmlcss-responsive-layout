@@ -56,8 +56,21 @@
     color: #FFF;
 }
 
+.btn__purple {
+    background-color: var(--purple);
+    color: #FFF;
+}
+
 section:nth-child(even) {
     background-color: var(--purple);
+}
+
+.card {
+    border-radius: 10px;
+    padding: 35px 30px 0;
+    gap: 2rem;
+    height: 100%;
+    line-height: 2rem;
 }
 
 
@@ -121,11 +134,6 @@ section:nth-child(even) {
 
 .hero .card {
     background-color: var(--light-blue);
-    border-radius: 10px;
-    padding: 35px 30px 0;
-    gap: 2rem;
-    height: 100%;
-    line-height: 2rem;
 }
 
 .hero #main__card .card__head {
@@ -263,6 +271,41 @@ section:nth-child(even) {
     font-weight: bold;
 }
 
+/* BENEFITS */
+
+.benefits {
+    padding: 4.5rem 0 4.25rem;
+}
+
+.benefits .card {
+    background-color: #FFF;
+    padding: 2rem;
+    flex-basis: 100%;
+}
+
+.benefits .row.flex {
+    gap: 2rem;
+}
+
+.benefits .benefits__title {
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 4.5rem;
+}
+
+.benefits .card__title,
+.benefits .card__sub-title {
+    color: var(--purple);
+}
+
+.benefits .benefits__title,
+.benefits .card__title {
+    font-size: 2.5rem;
+}
+
+.benefits .card__sub-title {
+    font-size: 1.5rem;
+}
 
 
 /******************************************************
@@ -345,6 +388,11 @@ section:nth-child(even) {
         display: block;
     }
 
+    /* BENEFITS */
+    .benefits .card {
+        flex-basis: calc((100% - 2rem) / 2);
+    }
+
 }
 
 /* Versione Desktop - large bootstrap */
@@ -398,6 +446,11 @@ section:nth-child(even) {
 
     /* TESTIMONIALS */
 
+    /* BENEFITS */
+    .benefits .card {
+        flex-basis: calc((100% - 4rem) / 3);
+    }
+
 
 
 }
@@ -406,7 +459,7 @@ section:nth-child(even) {
     TODO: DEBUG
 *******************************************************/
 
-.debug section:not([class="hero"]):not([class="planning"]):not([class="testimonials"]) {
+.debug section:not([class="hero"]):not([class="planning"]):not([class="testimonials"]):not([class="benefits"]) {
     border: 5px solid black;
     padding: 10px;
 }
