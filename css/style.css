@@ -77,6 +77,14 @@
     font-size: 1.75rem;
 }
 
+/******************************************************
+    MAIN
+*******************************************************/
+
+/* HERO */
+.hero {
+    padding: 50px 0 100px;
+}
 
 
 /* Media Query */
@@ -95,4 +103,16 @@
         display: none;
     }
 
+}
+
+/* TODO: Debug */
+
+.debug section:not([class="hero"]) {
+    border: 5px solid black;
+    padding: 10px;
+}
+
+.debug .hero .col {
+    padding: 50px;
+    border: 3px solid cornflowerblue;
 }
