@@ -54,6 +54,12 @@
     color: #FFF;
 }
 
+section:nth-child(even) {
+    background-color: var(--purple);
+}
+
+
+
 /* Approccio Mobile-first */
 
 /* Header */
@@ -136,7 +142,48 @@
     display: block;
 }
 
+/* Planning */
 
+.planning .row.flex {
+    gap: 40px;
+}
+
+.planning .row.flex>* {
+    flex-basis: 100%;
+}
+
+.planning .col.planning__head {
+    color: #FFF;
+}
+
+.planning .col.planning__head .planning__fig {
+    margin-bottom: 95px;
+}
+
+.planning .col.planning__head .planning__title {
+    margin-bottom: 50px;
+}
+
+.planning .planning__title {
+    font-size: 1.5rem;
+}
+
+.planning .card {
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 35px 25px;
+    text-align: center;
+    gap: 35px;
+}
+
+.planning .arrow__down i {
+    background-color: var(--purple);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    cursor: pointer;
+}
 
 
 /* Media Query */
