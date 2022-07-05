@@ -144,6 +144,10 @@ section:nth-child(even) {
 
 /* Planning */
 
+.planning {
+    padding: 70px 0 60px;
+}
+
 .planning .row.flex {
     gap: 40px;
 }
@@ -170,7 +174,7 @@ section:nth-child(even) {
 
 .planning .card {
     background-color: #FFF;
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 35px 25px;
     text-align: center;
     gap: 35px;
@@ -198,6 +202,11 @@ section:nth-child(even) {
 
     .col-span-2 {
         grid-column: span 2;
+    }
+
+    /* PLANNING */
+    .planning h2.planning__title {
+        font-size: 4rem;
     }
 
 }
@@ -228,11 +237,34 @@ section:nth-child(even) {
         align-self: flex-end;
     }
 
+    /* PLANNING */
+    .planning .row.flex>* {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    .planning h2.planning__title {
+        font-size: 3rem;
+    }
+
+    .planning .col.planning__head .planning__fig {
+        margin-bottom: 120px;
+    }
+
+    .planning .col.flex.planning__dev img {
+        width: 250px;
+    }
+
+    .planning .col.flex.planning__dev>* {
+        flex-direction: column;
+        align-self: flex-end;
+    }
+
 }
 
 /* TODO: Debug */
 
-.debug section:not([class="hero"]) {
+.debug section:not([class="hero"]):not([class="planning"]) {
     border: 5px solid black;
     padding: 10px;
 }
