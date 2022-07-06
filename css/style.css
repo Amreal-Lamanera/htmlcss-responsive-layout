@@ -248,7 +248,7 @@ section:nth-child(even) {
     flex-basis: 100%;
 }
 
-.testimonials .testimonials-card img {
+.round__img {
     max-width: 200px;
     aspect-ratio: 1/1;
     border-radius: 100%;
@@ -294,18 +294,41 @@ section:nth-child(even) {
     margin-bottom: 4.5rem;
 }
 
-.benefits .card__title,
-.benefits .card__sub-title {
+.card__title,
+.card__sub-title {
     color: var(--purple);
 }
 
 .benefits .benefits__title,
-.benefits .card__title {
+.card__title {
     font-size: 2.5rem;
 }
 
-.benefits .card__sub-title {
+.card__sub-title {
     font-size: 1.5rem;
+}
+
+/* ABOUT US */
+
+.about-us {
+    padding: 100px 0 150px;
+}
+
+.about-us .row>* {
+    flex-basis: 100%;
+    align-items: flex-start;
+}
+
+.about-us .row {
+    gap: 3.5rem;
+}
+
+.about-us .col.about__head {
+    gap: 4rem;
+}
+
+.about-us .col.about__body {
+    gap: 1.5rem;
 }
 
 
@@ -341,7 +364,18 @@ section:nth-child(even) {
         flex-basis: calc(((100% - 50px) / 3 * 2) + 25px);
     } */
 
-    /* SOLUZIONE CON FLEX + PADDING E MARGIN NEGATIvO */
+    /* SOLUZIONE CON FLEX BASIS + GROW 
+    .hero .row.flex>* {
+        flex-basis: 30%;
+        flex-grow: 1;
+    }
+
+    .hero .col.col-span-2 {
+        flex-basis: calc(60% + 12.5px);
+        flex-grow: 2;
+    }*/
+
+    /* SOLUZIONE CON FLEX + PADDING E MARGIN NEGATIVO */
     .hero .row.flex>* {
         flex-basis: calc(100% / 3);
         padding: 12.5px;
@@ -462,7 +496,7 @@ section:nth-child(even) {
 
 .debug section:not([class="hero"]):not([class="planning"]):not([class="testimonials"]):not([class="benefits"]) {
     border: 5px solid black;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 /* .debug .hero .card {
