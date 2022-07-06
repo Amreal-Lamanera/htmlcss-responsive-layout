@@ -155,8 +155,13 @@ section:nth-child(even) {
     padding-bottom: 35px;
 }
 
+.hero #main__card .card__img {
+    justify-content: center;
+}
+
 .hero #main__card .card__img img {
     display: block;
+    width: 220px;
 }
 
 /* Planning */
@@ -325,10 +330,12 @@ section:nth-child(even) {
 
 .about-us .col.about__head {
     gap: 4rem;
+    line-height: 2rem;
 }
 
 .about-us .col.about__body {
     gap: 1.5rem;
+
 }
 
 
@@ -428,6 +435,35 @@ section:nth-child(even) {
         flex-basis: calc((100% - 2rem) / 2);
     }
 
+    /* ABOUT US */
+    .about-us .container {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+
+    .about-us .row {
+        gap: 6rem;
+    }
+
+    .about-us .row>* {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    /* .about-us .row {
+        flex-basis: 200px;
+        flex-grow: 1;
+    } */
+
+    .about-us .col.about__head {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    .about-us .col.col.about__body {
+        flex-basis: 200px;
+        flex-grow: 0;
+    }
 }
 
 /* Versione Desktop - large bootstrap */
