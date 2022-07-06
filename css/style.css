@@ -522,6 +522,11 @@ section:nth-child(even) {
         flex-basis: calc((100% - 4rem) / 3);
     }
 
+    /* ABOUT US */
+    .about-us .container {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
 
 
 }
