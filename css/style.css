@@ -40,9 +40,15 @@
     padding: 0 2rem;
 }
 
+.container-xs {
+    max-width: 35.5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .button {
     background-color: #FFF;
-    border-radius: 20px;
+    border-radius: 999px;
     color: #000;
     padding: 0.5em 0.8em;
 }
@@ -342,6 +348,70 @@ section:nth-child(even) {
 
 }
 
+/* GET STARTED */
+
+.started {
+    padding: 4rem 0;
+    color: #FFF;
+}
+
+.started .started__title {
+    font-size: 1rem;
+    opacity: 0.7;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.started .started__sub-title {
+    font-size: 1.5rem;
+    padding: 0 2.5rem;
+}
+
+.started .started__free {
+    color: var(--yellow);
+    font-size: 2.5rem;
+    padding: 3.5rem 0;
+}
+
+.started div.flex {
+    align-items: center;
+    gap: 2.125rem;
+}
+
+.started p,
+.started ul {
+    font-size: 0.75rem;
+}
+
+.started .started__paragraph {
+    padding: 0 2.5rem;
+}
+
+
+.started .button {
+    padding: 1.5rem 5.25rem;
+    color: var(--purple);
+}
+
+.started ul.flex {
+    /* gap: 0.5rem; */
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.started li:not(:first-child)::before {
+    content: '\30FB';
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.started li a {
+    text-decoration: underline;
+}
+
 
 /******************************************************
     FOOTER
@@ -453,6 +523,22 @@ section:nth-child(even) {
         flex-basis: 200px;
         flex-grow: 0;
     }
+
+    /* GET STARTED */
+    .started .started__sub-title {
+        font-size: 2.75rem;
+        padding: 0;
+    }
+
+    .started .started__free {
+        font-size: 4.25rem;
+        padding: 3.5rem 0;
+    }
+
+    .started p,
+    .started ul {
+        font-size: 1rem;
+    }
 }
 
 /* Versione Desktop - large bootstrap */
@@ -492,7 +578,7 @@ section:nth-child(even) {
     }
 
     .planning .col.planning__head .planning__fig {
-        margin-bottom: 120px;
+        margin-bottom: 8rem;
     }
 
     .planning .col.flex.planning__dev img {
